@@ -6,4 +6,5 @@ def insertion_sort(arr):
         
 
 arr = [2,5,5,8,5,5,5,5,6]
-insertion_sort(arr)
+result=insertion_sort(arr)
+print("final result :",result)
