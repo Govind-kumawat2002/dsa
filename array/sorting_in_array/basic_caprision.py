@@ -6,6 +6,6 @@ def com_sorting(arr):
              arr[j+1]=arr[j]
              j=j-1
         arr[j+1]=key
-
+print("hello")
 arr = [1,2,5,0,8,5]
 com_sorting(arr)
