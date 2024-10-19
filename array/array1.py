@@ -189,35 +189,80 @@
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>binary search in array>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-def binary_search(arr, search_element):
-    # haf=(arr[0]+len(arr))//2
-    # print(haf)
-        mid=(arr[0]+len(arr))//2
-        if arr[mid]==search_element:
-                print(arr[search_element])
+# def binary_search(arr, search_element):
+#     # haf=(arr[0]+len(arr))//2
+#     # print(haf)
+#         mid=(arr[0]+len(arr))//2
+#         if arr[mid]==search_element:
+#                 print(arr[search_element])
 
-        elif arr[mid]>search_element:
-                 print(arr[search_element])
+#         elif arr[mid]>search_element:
+#                  print(arr[search_element])
                 
-                # print(search_element)
-        elif arr[mid]<search_element:
-                # print(arr[search_element])
-                print(arr[search_element])
+#                 # print(search_element)
+#         elif arr[mid]<search_element:
+#                 # print(arr[search_element])
+#                 print(arr[search_element])
                 
-        else:
-                print("that is not mid position ")
-        # print(arr[mid])
+#         else:
+#                 print("that is not mid position ")
+#         # print(arr[mid])
                 
                 
-        # for mid in arr:
+#         # for mid in arr:
                 
          
 
-arr = [1,2,5,6,7,8,9,10,11,12,13,14]
-binary_search(arr, search_element=10)
+# arr = [1,2,5,6,7,8,9,10,11,12,13,14]
+# binary_search(arr, search_element=10)
         
 
+# def ll_foound(name):
+#         y = "l"
+#         count = 0
+
+#         for x in name:
+
+#                if x ==y:
+#                 count +=1
+#         print(count)
+                        
+# name = "hello"
+# result=ll_foound(name)
+# print(result)
+
+
+# n = int(input())
+# count =[]
+# for x in range(0, n+1):
+        
+#         count.append(x)
+# print(count)
+
+# n = int(input())
+  
+# count =[]
+# for x in range(0, n+1):
+        
+#         count.append(x)
+# for y in count:
+#         print(y*y)
+
+def is_leap(year):
+    if year >1900:
+        
+        if year//4==0:
+            print("that is leap")
+        else:
+                print("that is no leap year")
+        
     
-        
+    
+    # Write your logic here
+    
+#     return leap
 
+year = int(input())
+print(is_leap(year))
+        
     
