@@ -248,21 +248,90 @@
 # for y in count:
 #         print(y*y)
 
-def is_leap(year):
-    if year >1900:
+# def is_leap(year):
+#     if year >1900:
         
-        if year//4==0:
-            print("that is leap")
-        else:
-                print("that is no leap year")
+#         if year//4==0:
+#             print("that is leap")
+#         else:
+#                 print("that is no leap year")
         
     
     
-    # Write your logic here
+#     # Write your logic here
     
-#     return leap
+# #     return leap
 
-year = int(input())
-print(is_leap(year))
+# year = int(input())
+# print(is_leap(year))
+
+
+# class Solution(object):
+#     def twoSum(self, nums, target):
+
+#         # self.nums = nums
+#         # self.target = target 
+#         count = []
+#         for x in nums:
+#             if x+x == target: 
+#                  count.append(x)
+#                 # print(x)
+#         print(count)
+
+
+
+#         # """
+#         # :type nums: List[2,7,11,15]
+#         # :type target: 9
+#         # :rtype: List[int]
+#         # """
+# hello=Solution()
+# hello.twoSum(nums=[1,2,3,4,5],target=9)  
+
+def twoSum( nums, target):
+
+        # self.nums = nums
+        # self.target = target 
+        count = []
+        print(nums)
+        for x in range(len(nums)):
+            for y in range(x +1 , len(nums)):
+                if nums[x] + nums[y] == target:
+        
+                    return [x, y]
+        return None
+            # print(x)
+           
+       
+                
+         
+nums = [1,2,4,5]
+target = 9
+result=twoSum(nums, target)
+print(result)
+# def twoSum(nums, target):
+#     # Create a dictionary to store the index of each element
+#     index_map = {}
+    
+#     # Iterate through the list
+#     for i, num in enumerate(nums):
+#         # Calculate the complement that would sum to the target
+#         complement = target - num
+        
+#         # Check if the complement exists in the dictionary
+#         if complement in index_map:
+#             return [index_map[complement], i]
+        
+#         # Otherwise, store the index of the current number
+#         index_map[num] = i
+    
+#     # If no solution is found, return an empty list or None
+#     return None
+
+# # Test the function
+# nums = [1, 2, 4, 5]
+# target = 9
+# result = twoSum(nums, target)
+# print(result)  
         
     
