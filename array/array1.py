@@ -18,19 +18,19 @@
 # def linearsearch(arr,x):
 #     for y in range(len(arr)):
 #         if arr[y]==x:
-#             return y
+#             return y 
 #         # else:
-#     # return 
+#     return -1
 
 # arr = [1,2,3,5,6,6,1,6,41,6,1]
 
-# result=linearsearch(arr=arr,x=3)
+# result=linearsearch(arr,x=3)
 # print("that is present inside the array",result)
 
 
 # >>>>>>>>>>>>>>>>>>>insert element any positiuoin in array>>>>>>>>>>>>>>>>>>>>>
 # def insert(arr, position ,data):
-#     a = []
+#     # a = []
 #     for x in range(len(arr)):
 #         if arr[x]==position:
 #             arr[position]=data
@@ -288,28 +288,28 @@
 # hello=Solution()
 # hello.twoSum(nums=[1,2,3,4,5],target=9)  
 
-def twoSum( nums, target):
+# def twoSum( nums, target):
 
-        # self.nums = nums
-        # self.target = target 
-        count = []
-        print(nums)
-        for x in range(len(nums)):
-            for y in range(x +1 , len(nums)):
-                if nums[x] + nums[y] == target:
+#         # self.nums = nums
+#         # self.target = target 
+#         count = []
+#         print(nums)
+#         for x in range(len(nums)):
+#             for y in range(x +1 , len(nums)):
+#                 if nums[x] + nums[y] == target:
         
-                    return [x, y]
-        return None
-            # print(x)
+#                     return [x, y]
+#         return None
+#             # print(x)
            
        
                 
          
-nums = [1,2,4,5]
-target = 9
-result=twoSum(nums, target)
-print(result)
-# def twoSum(nums, target):
+# nums = [1,2,4,5]
+# target = 9
+# result=twoSum(nums, target)
+# print(result)
+# # def twoSum(nums, target):
 #     # Create a dictionary to store the index of each element
 #     index_map = {}
     
