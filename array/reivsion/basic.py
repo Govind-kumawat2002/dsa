@@ -255,32 +255,122 @@ class Meralist:
         if self.n ==0 :
             return """list is empty"""
         
+        
+        print(self.A[self.n-1] )
+
+        self.n=self.n -1 
+
+    def __clear__(self):
+        self.n =0
+        self.size =1 
+
+    
+            
+
+
+
+
+    
+
+    def __find__(self,item ):
+        for x in range(self.n):
+            
+            if self.A[x]==item:
+                
+                print( x)
+
+            else:
+                return "value error "
+
+
+    def __insert__(self, pos , item ):
+        if self.n == self.size:
+            self.__resize(self.size *2 )
+        for i in range(self.n, pos,-1):
+            # if i ==0:
+                self.A[i] = self.A[i-1]
+
+        self.A[pos]=item
+        self.n = self.n +1 
+
+
+    def __remove__(self , item):
+       
+        pos=self.__find__(item=item)
+        if type(pos)==int:
+            self.__delitem__(pos)
         else:
-            print(self.A[self.n-1] )
-            return  self.n == self.n  -1 
+            return pos
+
+
+    def __delitem__(self,pos ):
+        for x in range(pos , self.n-1):
+            self.A[x]= self.A[x+1]
+            # if self.A[x]==pos
+        self.n = self.n -1 
+   
+
+
 
 
 
     def create_array(self,capacity):
         # create a c ype array statics , referential 
         return (capacity*ctypes.py_object)()
+        
+
+
+
+
+
+        
+            
+
+                
+
+# print()
     
 
 lst =Meralist()
-lst.__append__(22)
+# lst.__append__(22)
 lst.__append__(23)
-lst.__append__(7)
-lst.__append__("hello")
-lst.__append__("hello")
-lst.__append__("hiii")
-lst.__append__("ram ram sa ")
-lst.__append__("jai  shree ram ")
+lst.__append__(24)
+lst.__append__(25)
+lst.__append__(26)
+
+
+# lst.__append__(7)
+# lst.__append__("i love you ")
+# lst.__append__("i like you ")
+# lst.__append__("hiii")
+# lst.__append__("ram ram sa ")
+# lst.__append__("jaishreeram")
 
 # print(len(lst))
 # print(lst[2])
+# print(lst)
+# lst.__pop__()
+# lst.__pop__()
+# lst.__pop__()
+# lst.__clear__()
+# lst.__find__(23)
+# lst.index("jaishreeram")
+# lst.index(678)
+
+# print(lst)
+# lst.__find__(516846)
+# lst.__insert__(1,"govind")
+# del[lst[2]]
+# lst.__delitem__(2)
+# del lst[2]
+# lst.__remove__(23)
+lst.__remove__(23)
 print(lst)
-lst.__pop__()
-print(lst)
+
+
+
+# print("__delitem__")
+
 
 
 
