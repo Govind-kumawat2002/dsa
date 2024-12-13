@@ -87,6 +87,128 @@
 
 ##### print 
 
+# import ctypes # create a datatype byusing ctypes 
+# class Meralist:
+#     def __init__(self):
+#         self.size = 1   # kite item story kr skte ho 
+#         self.n = 0  # kite item store hai 
+#         self.A=self.create_array(self.size)
+
+
+#     def __len__(self):
+#         return self.n
+    
+#     def __append__(self,item):
+#         if self.n ==self.size:
+#             return self.__resize(self.size*2)
+#         self.A[self.n]=item
+#         self.n = self.n +1 
+
+
+#     def __str__(self):
+#         result = ""
+#         for x in range(self.n):
+#             result = result +str(self.A[x]) + ','
+            
+#         return '['+result+']'
+#     def __getitem__(self , index):
+#         if 0<index<self.n:
+
+
+#             return self.A[index]
+#         else :
+#             return 'out of range '
+
+             
+#     def __resize(self,new_capacity):
+#         B=self.create_array(new_capacity)
+#         self.size = new_capacity
+#         for x in range(self.n):
+#             B[x]= self.A[x] 
+#         self.A=B
+
+#     def create_array(self,capacity):
+#         # create a c ype array statics , referential 
+#         return (capacity*ctypes.py_object)()
+    
+
+# lst =Meralist()
+# lst.__append__(22)
+# lst.__append__(23)
+# lst.__append__(7)
+# lst.__append__("hello")
+# lst.__append__("hello")
+# lst.__append__("hiii")
+# lst.__append__("ram ram sa ")
+# lst.__append__("jai  shree ram ")
+
+# # print(len(lst))
+# print(lst[2])
+
+
+
+# index
+
+# import ctypes # create a datatype byusing ctypes 
+# class Meralist:
+#     def __init__(self):
+#         self.size = 1   # kite item story kr skte ho 
+#         self.n = 0  # kite item store hai 
+#         self.A=self.create_array(self.size)
+
+
+#     def __len__(self):
+#         return self.n
+    
+#     def __append__(self,item):
+#         if self.n ==self.size:
+#             return self.__resize(self.size*2)
+#         self.A[self.n]=item
+#         self.n = self.n +1 
+
+
+#     def __str__(self):
+#         result = ""
+#         for x in range(self.n):
+#             result = result +str(self.A[x]) + ','
+            
+#         return '['+result+']'
+#     def __getitem__(self , index):
+#         if 0<index<self.n:
+
+
+#             return self.A[index]
+#         else :
+#             return 'out of range '
+
+             
+#     def __resize(self,new_capacity):
+#         B=self.create_array(new_capacity)
+#         self.size = new_capacity
+#         for x in range(self.n):
+#             B[x]= self.A[x] 
+#         self.A=B
+
+#     def create_array(self,capacity):
+#         # create a c ype array statics , referential 
+#         return (capacity*ctypes.py_object)()
+    
+
+# lst =Meralist()
+# lst.__append__(22)
+# lst.__append__(23)
+# lst.__append__(7)
+# lst.__append__("hello")
+# lst.__append__("hello")
+# lst.__append__("hiii")
+# lst.__append__("ram ram sa ")
+# lst.__append__("jai  shree ram ")
+
+# # print(len(lst))
+# print(lst[2])
+
+
+##### pop 
 import ctypes # create a datatype byusing ctypes 
 class Meralist:
     def __init__(self):
@@ -127,6 +249,18 @@ class Meralist:
             B[x]= self.A[x] 
         self.A=B
 
+
+    def __pop__(self):
+        # return self.A[]
+        if self.n ==0 :
+            return """list is empty"""
+        
+        else:
+            print(self.A[self.n-1] )
+            return  self.n == self.n  -1 
+
+
+
     def create_array(self,capacity):
         # create a c ype array statics , referential 
         return (capacity*ctypes.py_object)()
@@ -143,4 +277,11 @@ lst.__append__("ram ram sa ")
 lst.__append__("jai  shree ram ")
 
 # print(len(lst))
-print(lst[2])
+# print(lst[2])
+print(lst)
+lst.__pop__()
+print(lst)
+
+
+
+
