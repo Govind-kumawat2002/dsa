@@ -1,9 +1,9 @@
-# i = 0
-for x in range(1,5):
-    print(x,end=" ")
-    print("/n")
-    for y in range(1,5):
-        print(y,end=" ")
+# # i = 0
+# for x in range(1,5):
+#     print(x,end=" ")
+#     print("/n")
+#     for y in range(1,5):
+#         print(y,end=" ")
 # while i<=4:
 #     print(i,end=" ")    
 #     i+=1
@@ -29,3 +29,6 @@ for x in range(1,5):
 
 # for _ in range(1,5):
     
+
+lst  = [ 1,2,3,5,5,5,65]
+print(lst.find(1))
