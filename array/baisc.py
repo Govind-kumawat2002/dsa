@@ -58,19 +58,37 @@
 # target = 0 
 # result =sum_3(arr , target)
 # print("the 3 sum is ",result)
-def Sum3_Closest(arr, target ):
+# def Sum3_Closest(arr, target ):
 
+#     for i in range(len(arr)):
+#         if arr[i]==target:
+#             return i 
+#         for j in range(i+1 , len(arr)):
+#             if arr[j]==target:
+#                 return j 
+#             for k in range(j+1, len(arr)):
+#                 return k 
+#             return [arr[i] , arr[j] , arr[k] ]
+
+# arr =[-1,2,1,-4]
+# target = -4 
+# result =Sum3_Closest(arr, target)
+# print(result)
+
+
+#  Remove Duplicates from Sorted Array
+def dupliacates(arr):
     for i in range(len(arr)):
-        if arr[i]==target:
-            return i 
-        for j in range(i+1 , len(arr)):
-            if arr[j]==target:
-                return j 
-            for k in range(j+1, len(arr)):
-                return k 
-            return [arr[i] , arr[j] , arr[k] ]
+        for j in range(i+1, len(arr)):
+            if arr[i]==arr[j]:
+                del arr[i]
 
-arr =[-1,2,1,-4]
-target = -4 
-result =Sum3_Closest(arr, target)
-print(result)
+        #    return arr[i]
+            
+    return -1 
+
+
+    
+arr = [1,2,3,4,3]
+result =dupliacates(arr)
+print("the duplicates value in array ",result)
