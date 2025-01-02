@@ -142,20 +142,52 @@
 
 # If there is no common prefix, return an empty string "".
 
-def longest_common_function_prefix(lst):
-    y = []
-    xx=''
-    for x in lst:
-        # print(x)
-        for i in range(len(x)):
-            # print(i)
-            for j in range(i+1,len(x)):
+# def longest_common_function_prefix(lst):
+#     y = []
+#     xx=''
+#     for x in lst:
+#         # print(x)
+#         for i in range(len(x)):
+#             # print(i)
+#             for j in range(i+1,len(x)):
 
-                if x[i]==x[j]:
-                    y.append(x[i])
-                    break
-                # continue
-    return y 
+#                 if x[i]==x[j]:
+#                     y.append(x[i])
+#                     break
+#                 # continue
+#     return y 
             
-lst = ['helo','heo',"heluuu"]
-print(longest_common_function_prefix(lst))
+# lst = ['helo','heo',"heluuu"]
+# print(longest_common_function_prefix(lst))
+
+
+# Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+# An input string is valid if:
+
+# Open brackets must be closed by the same type of brackets.
+# Open brackets must be closed in the correct order.
+# Every close bracket has a corresponding open bracket of the same type.
+
+# def  containing_char(char):
+#     if char=="()":
+#         return True
+#     else:
+#         return False
+    
+
+
+
+# char = "[()]}"
+# print(containing_char(char))
+
+# Find the Index of the First Occurrence in a String
+# def Occurrence(main, find ):
+#     if find in main:
+#         return 0
+#     else:
+#         return -1
+# main = "govind"
+# find =  "gov"
+    
+# print(Occurrence(main , find))
