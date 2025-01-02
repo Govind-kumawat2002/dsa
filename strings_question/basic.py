@@ -143,17 +143,19 @@
 # If there is no common prefix, return an empty string "".
 
 def longest_common_function_prefix(lst):
-    y = ''
+    y = []
     xx=''
     for x in lst:
         # print(x)
-        for i in x:
-            if i in y:
-                xx+=y
+        for i in range(len(x)):
+            # print(i)
+            for j in range(i+1,len(x)):
 
-
-            y+=i
-    return xx 
+                if x[i]==x[j]:
+                    y.append(x[i])
+                    break
+                # continue
+    return y 
             
-lst = ['hello','heo',"hellu"]
+lst = ['helo','heo',"heluuu"]
 print(longest_common_function_prefix(lst))
