@@ -190,4 +190,13 @@
 # main = "govind"
 # find =  "gov"
     
-# print(Occurrence(main , find))
+print(Occurrence(main , find))
+def Occurrence(main, find ):
+    if find in main:
+        return 0
+    else:
+        return -1
+main = "govind"
+find =  "gov"
+    
+print(Occurrence(main , find))
