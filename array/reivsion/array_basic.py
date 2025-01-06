@@ -49,16 +49,46 @@
 # arr = [1,2,3,4,5,0]
 # print(sorted_array(arr))
 # remove element form sorted array 
-def remove_element(arr):
-    duplicate=None
-    for x in arr:
-        if x==x:
-            duplicate=x
-            if duplicate==arr[x]:
-                return"present hai ",duplicate
+# def remove_element(arr):
+#     duplicate=None
+#     for x in arr:
+#         if x==x:
+#             duplicate=x
+#             if duplicate==arr[x]:
+#                 return"present hai ",duplicate
 
         
-    return duplicate
+#     return duplicate
 
-arr = [1,2,3,4,4,5,6]
-print(remove_element(arr))
+# arr = [1,2,3,4,4,5,6]
+# print(remove_element(arr))
+# def remove_element(arr):
+#     k = 1 
+#     for i in range(1, len(arr)):
+#         if arr[i]!=arr[k-1]:
+#             arr[k]=arr[i]
+#             k+=1
+#     return k
+
+# arr = [1,1,2,2,3,3]
+# print(remove_element(arr))
+
+
+# Rotated array in python 
+# def Rotate_array(arr,k ):
+#     # for x in range(len(arr)):
+        
+#     a=arr[1:k]
+#     b=arr[k:]
+#     return b+a
+            
+
+# k = 3 
+# arr = [1,2,3,4,5,6,7]
+# print(Rotate_array(arr,k))
+
+
+# def move_zeros(arr):
+    
+# print(move_zeros(arr))
+
