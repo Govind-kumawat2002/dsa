@@ -39,12 +39,26 @@
 # arr = [1,2,5,58]
 # print(second_largest(arr))
 
-def sorted_array(arr):
-    for x in range(len(arr)-1):
-        if arr[x]>arr[x+1]:
-            return False
-    return True
+# def sorted_array(arr):
+#     for x in range(len(arr)-1):
+#         if arr[x]>arr[x+1]:
+#             return False
+#     return True
 
 
-arr = [1,2,3,4,5,0]
-print(sorted_array(arr))
+# arr = [1,2,3,4,5,0]
+# print(sorted_array(arr))
+# remove element form sorted array 
+def remove_element(arr):
+    duplicate=None
+    for x in arr:
+        if x==x:
+            duplicate=x
+            if duplicate==arr[x]:
+                return"present hai ",duplicate
+
+        
+    return duplicate
+
+arr = [1,2,3,4,4,5,6]
+print(remove_element(arr))
