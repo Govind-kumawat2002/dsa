@@ -92,3 +92,57 @@
     
 # print(move_zeros(arr))
 
+# linear- search in array
+# def liner_search(arr ,element):
+#     for i in range(len(arr)):
+#         if arr[i]==element:
+#             return i 
+
+# arr = [1,2,3,4,5]
+# element = 5 
+# print(liner_search(arr,element))
+
+# binary searching 
+# def binary_search(arr, target):
+    
+#   q = arr[0]
+#   p = len(arr) - 1
+#   mid =(p+q)//2
+#   for i in range(len(arr)):
+#     if arr[mid]==tagert:
+#         return i 
+#     elif arr[mid]<tagert:
+#         q=mid+1
+#     elif arr[mid]>tagert:
+#         p = mid-1
+        
+
+# arr = [ 1,2,3,4,5,6]
+# tagert = 3 
+# print(binary_search(arr, tagert))
+
+
+
+
+### find the union from a array 
+# def union_array(arr1,arr2):
+#     set_array1 = set(arr1)
+#     set_array2 = set(arr2)
+#     result =set_array1.union(set_array2)
+#     return list(result)
+# arr1 =[1,2,3,4,5,6,7]
+# arr2 = [1,2,3,4,6,7,7] 
+# print(union_array(arr1,arr2))
+
+
+
+
+# missing number in array 
+
+
+def missing_number(arr):
+    for x in range(0,(len(arr)+1)):
+         if x !=arr[x]:
+            return x 
+arr = [0,1,2,3,5,6,7]
+print(missing_number(arr))
