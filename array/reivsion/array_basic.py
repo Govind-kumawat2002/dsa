@@ -140,9 +140,49 @@
 # missing number in array 
 
 
-def missing_number(arr):
-    for x in range(0,(len(arr)+1)):
-         if x !=arr[x]:
-            return x 
-arr = [0,1,2,3,5,6,7]
-print(missing_number(arr))
+# def missing_number(arr):
+#     for x in range(0,(len(arr)+1)):
+#          if x !=arr[x]:
+#             return x 
+# arr = [0,1,2,3,5,6,7]
+# print(missing_number(arr))
+ 
+
+
+
+
+
+
+# max consecutive ones
+# def max_one(nums):
+#     current = 0
+#     max_y = 0
+#     for x in nums:
+#         if x==1:
+#             current+=1
+#             max_y=max(current ,max_y)
+#         else:
+#             current =0
+#     return max_y
+
+# nums = [1,1,2,0,1,1,1]
+# print(max_one(nums))
+
+
+# find the single value in array 
+def single_element(num):
+    duplicated = []
+    sinle =[]
+    for x in range(len(num)):
+        for y in range(x+1,len(num)):
+            if num[x]==num[y]:
+                duplicated.append(num[y])
+            else:
+                sinle.append(num[x])
+
+    return sinle
+
+
+
+num = [1,1,0,2,2,3,3]
+print(single_element(num))
