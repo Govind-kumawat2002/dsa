@@ -190,13 +190,28 @@
 # main = "govind"
 # find =  "gov"
     
-print(Occurrence(main , find))
-def Occurrence(main, find ):
-    if find in main:
-        return 0
-    else:
-        return -1
-main = "govind"
-find =  "gov"
+# print(Occurrence(main , find))
+# def Occurrence(main, find ):
+#     if find in main:
+#         return 0
+#     else:
+#         return -1
+# main = "govind"
+# find =  "gov"
     
-print(Occurrence(main , find))
+# print(Occurrence(main , find))
+
+
+def outermost_parenthis(st):
+    # string = "()"
+    # for i in range(len(st)):
+    #     for j in range(i+1, len(st)):
+    #         if st[i]==string:
+    #             # string.append(st[i])
+    #             # string.append(st[j])
+    #             return i
+    for i , char in enumerate(st):
+        
+
+st = "(()())(())"
+print(outermost_parenthis(st))
