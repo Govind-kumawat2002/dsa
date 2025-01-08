@@ -170,19 +170,32 @@
 
 
 # find the single value in array 
-def single_element(num):
-    duplicated = []
-    sinle =[]
-    for x in range(len(num)):
-        for y in range(x+1,len(num)):
-            if num[x]==num[y]:
-                duplicated.append(num[y])
-            else:
-                sinle.append(num[x])
+# def single_element(num):
+#     duplicated = []
+#     sinle =[]
+#     for x in range(len(num)):
+#         for y in range(x+1,len(num)):
+#             if num[x]!=num[y]:
+#                 duplicated.append(num[x])
+#             # return x
 
-    return sinle
-
+#     return duplicated
 
 
-num = [1,1,0,2,2,3,3]
-print(single_element(num))
+
+# num = [1,1,0,0,2,2,3,3,4]
+# print(single_element(num))
+
+def sumofsumitem(arr , sum ):
+    node = []
+    for x in range(len(arr)):
+        for y in range(x+1,len(arr)):
+            if arr[x]+arr[y]==sum:
+                # node+=1
+                node.append(arr[x])
+                node.append(arr[y])
+                
+    return node
+                 
+arr = [1,2,3,4,5,6,7]
+print(sumofsumitem(arr, sum = 13))

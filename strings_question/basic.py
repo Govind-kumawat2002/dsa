@@ -210,8 +210,22 @@ def outermost_parenthis(st):
     #             # string.append(st[i])
     #             # string.append(st[j])
     #             return i
+    result = []
+    start = 0
+    bal = 0 
     for i , char in enumerate(st):
-        
+        if char=="(":
+            if bal==0:
+                start=i
+            bal+=1
+        elif  char==")":
+            # start = 0
+            bal-=1
+            
+        result.append(st[start+1:i])
+    return result
+
+
 
 st = "(()())(())"
 print(outermost_parenthis(st))
