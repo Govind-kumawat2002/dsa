@@ -202,30 +202,113 @@
 # print(Occurrence(main , find))
 
 
-def outermost_parenthis(st):
-    # string = "()"
-    # for i in range(len(st)):
-    #     for j in range(i+1, len(st)):
-    #         if st[i]==string:
-    #             # string.append(st[i])
-    #             # string.append(st[j])
-    #             return i
-    result = []
-    start = 0
-    bal = 0 
-    for i , char in enumerate(st):
-        if char=="(":
-            if bal==0:
-                start=i
-            bal+=1
-        elif  char==")":
-            # start = 0
-            bal-=1
+# def outermost_parenthis(st):
+#     # string = "()"
+#     # for i in range(len(st)):
+#     #     for j in range(i+1, len(st)):
+#     #         if st[i]==string:
+#     #             # string.append(st[i])
+#     #             # string.append(st[j])
+#     #             return i
+#     result = []
+#     start = 0
+#     bal = 0 
+#     for i , char in enumerate(st):
+#         if char=="(":
+#             if bal==0:
+#                 start=i
+#             bal+=1
+#         elif  char==")":
+#             # start = 0
+#             bal-=1
             
-        result.append(st[start+1:i])
-    return result
+#         result.append(st[start+1:i])
+#     return result
 
 
 
-st = "(()())(())"
-print(outermost_parenthis(st))
+# st = "(()())(())"
+# print(outermost_parenthis(st))
+
+
+# Longest Substring Without Repeating Characters
+# def longest_substring(s):
+#     long= []
+#     for i in range(len(s)):
+#         for j in range(i+1,len(s)):
+#             if s[i]==s[j]:
+#                 long.append(s[i])
+#     return long
+                
+# s = "abcabcbb"
+# print(longest_substring(s))
+
+
+# def length_of_longest_substring(s: str) -> int:
+#     char_set = set()
+#     max_length = 0
+#     start = 0
+
+#     for end in range(len(s)):
+#         while s[end] in char_set:
+#             char_set.remove(s[start])  # Remove characters from the start
+#             start += 1
+#         char_set.add(s[end])  # Add the new character
+#         max_length = max(max_length, end - start + 1)
+
+#     return s[max_length]
+
+# # Example usage
+# s = "abcabcbb"
+# print(length_of_longest_substring(s))  # Output: 3 ("abc")
+
+
+#Longest Palindromic Substring
+# def longest_palindromic(s):
+#     sub = []
+#     point = 0 
+#     for i in range(len(s)):
+#         sub.append(s[i])
+        
+
+#         while sub in 
+#     return sub
+        
+
+
+# s= "abba"
+# print(longest_palindromic(s))
+# largest odd number in string
+# def largest_odd_number(num):
+#     num=int(num)
+#     # print(num)
+#     if num % 2==0:
+#         print("this is even number:-",num)
+#         num=str(num)
+#         a=num[0]
+#         print(a)
+
+#     else :
+#         return str(num)
+
+
+
+
+# num = "525"
+# result =largest_odd_number(num)
+# print(result)
+
+# longest comman prefix
+def longest_prefix(lst):
+    # ans = ''
+    # a=[len(lst[0]),len(lst[1]),len(lst[2])]
+    # a.sort()
+    # return a
+    lst=lst.sort()
+    print(lst[0])
+    
+    
+
+lst = ['flower', 'flow', 'flight']
+print(longest_prefix(lst))
+
